@@ -6,7 +6,7 @@
 /*   By: brunodeoliveira <brunodeoliveira@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 23:43:02 by bgoncalv          #+#    #+#             */
-/*   Updated: 2022/04/26 03:37:27 by brunodeoliv      ###   ########.fr       */
+/*   Updated: 2022/04/27 20:16:47 by brunodeoliv      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(int argc, char **argv)
 	t_mlx	*mlx;
 	int		fd;
 
-	if (argc != 2)
+	if (argc > 2)
 		return (ft_quit("error : please enter a map path as arg!"));
 	mlx = ft_get_mlx(argv[1]);
 	if (!mlx)
